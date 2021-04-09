@@ -1,0 +1,189 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+/* navbar section which includes the links displayed above the page like sign in button and Images */
+#navbar { 
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px; /* These are the spaces that will be used for the top links */
+    grid-template-rows: 45px;
+    grid-template-areas: "about store . gmail images google-apps sign-in"
+}
+
+a {
+    /* This is going to be for all the a href links */ 
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+#About {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+}
+
+#Store {
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+}
+
+#Gmail {
+    grid-area: gmail;
+    justify-self: auto;
+    align-self: center;
+}
+
+#Images {
+    grid-area: images;
+    justify-self: auto;
+    align-self: center;
+}
+
+#Sign-In {
+    grid-area: sign-in;
+    justify-self: center;
+    align-self: center;
+    border: none;
+    font-size: 14px;
+    background-color:rgb(4, 107, 167);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#Sign-In:hover {
+    background-color: rgb(39, 128, 180);
+}
+
+#Google-Apps {
+    grid-area: google-apps;
+    justify-self: center;
+    align-self: center;
+}
+/* This is going to be for the google logo and search bar aka Main section */
+
+#Main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* We use three to place Google logo in the middle */
+    grid-template-rows: 150px 80px 50px 200px;
+    grid-template-areas: 
+    ". google-logo ."
+    ". search-bar ."
+    ". flexbox ."
+    " . COVID-19-info . ";
+}
+
+#Google-Logo {
+    grid-area: google-logo;
+    justify-self: center;
+    align-self: baseline-position;
+}
+
+#Search-bar {
+    grid-area: search-bar;
+    height: 30px;
+    align-self: center;
+    border: 1px solid grey;
+    border-radius: 25px;
+}
+
+#Search-bar:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: overflow-position;
+}
+
+#Google-Search-Button {
+     border: none;
+     font-size: 14px;
+     color:#222;
+     padding: 10px 20px;
+     border-radius: 5px;
+     margin-right: 12px;
+}
+
+#Google-Search-Button:hover {
+    border: 1px solid grey;
+    box-shadow: 1px 1px 1px grey;
+}
+
+#I-am-Feeling-Lucky {
+   border: none; 
+   font-size: 14px;
+   color: #222;
+   padding: 10px 20px;
+   border-radius: 5px;
+}
+
+#I-am-Feeling-Lucky:hover {
+    border: 1px solid grey;
+    box-shadow: 1px 1px 1px grey;
+}
+
+#COVID-19-info {
+    grid-area: COVID-19-info;
+    justify-self: center;
+    align-self: overflow-position;
+}
+
+/* footer section */
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 90px 90px 150px 1000px 80px 80px 80px;
+    grid-template-rows: 45px;
+    grid-template-areas: 
+    "ads business how carbon privacy terms settings";
+}
+    /* Holding option key while clicking, you can copy that command to various spots in the code */
+#Carbon-Neutral {
+    grid-area: carbon;
+    justify-self: center;
+    align-self: center;
+}
+
+#Ads {
+    grid-area: ads;
+    justify-self: center;
+    align-self: center;
+}
+
+#Business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+}
+
+#How-Search-Works {
+    grid-area: how;
+    justify-self: center;
+    align-self: center;
+}
+
+#Privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+}
+
+#Terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+
+#Settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
+}
